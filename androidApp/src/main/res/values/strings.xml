@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_login">Login Screen</string>
+    <string name="title_main">Main Screen</string>
+    <string name="title_bottom">Bottom Menu Screen</string>
+    <string name="title_tasks">Tasks Screen</string>
+    <string name="title_events">Events Screen</string>
+
+    <string name="label_login">Login</string>
+    <string name="label_password">Password</string>
+
+    <string name="button_signin">Sign In</string>
+
+    <string name="error_login_empty">Login cannot be empty</string>
+    <string name="error_password_empty">Password cannot be empty</string>
+    <string name="error_password_short">Password must be more than 4 characters</string>
+</resources>
