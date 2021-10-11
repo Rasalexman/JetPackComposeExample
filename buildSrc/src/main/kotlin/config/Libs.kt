@@ -4,6 +4,17 @@ object Libs {
     object Core {
         const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
         const val livedataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
+        const val material = "com.google.android.material:material:${Versions.material}"
+    }
+
+    object Compose {
+        const val activity = "androidx.activity:activity-compose:${Versions.Compose.activity}"
+        const val navigation = "androidx.navigation:navigation-compose:${Versions.Compose.navigation}"
+        const val ui = "androidx.compose.ui:ui:${Versions.Compose.compose}"
+        const val tooling = "androidx.compose.ui:ui-tooling:${Versions.Compose.compose}"
+        const val preview = "androidx.compose.ui:ui-tooling-preview:${Versions.Compose.compose}"
+        const val material = "androidx.compose.material:material:${Versions.Compose.compose}"
+        const val livedata = "androidx.compose.runtime:runtime-livedata:${Versions.Compose.compose}"
     }
 
     object Common {

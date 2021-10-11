@@ -55,7 +55,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = config.Versions.compose
+        kotlinCompilerExtensionVersion = config.Versions.Compose.compose
         kotlinCompilerVersion = config.Versions.kotlin
     }
     packagingOptions {
@@ -75,27 +75,27 @@ dependencies {
     implementation(config.Libs.Common.sresult)
     //implementation(config.Libs.Common.sresultpresentation)
 
-    implementation("androidx.core:core-ktx:1.6.0")
-    implementation("com.google.android.material:material:1.4.0")
+    //implementation("androidx.core:core-ktx:1.6.0")
+    implementation(config.Libs.Core.material)
     // Integration with activities
-    implementation("androidx.activity:activity-compose:1.3.0")
+    implementation(config.Libs.Compose.activity)
 
-    implementation("androidx.navigation:navigation-compose:2.4.0-alpha05")
+    implementation(config.Libs.Compose.navigation)
 
     //------ Compose Core
-    implementation("androidx.compose.ui:ui:${config.Versions.compose}")
+    implementation(config.Libs.Compose.ui)
     // Tooling support (Previews, etc.)
-    implementation("androidx.compose.ui:ui-tooling:${config.Versions.compose}")
-    implementation("androidx.compose.ui:ui-tooling-preview:${config.Versions.compose}")
+    implementation(config.Libs.Compose.tooling)
+    implementation(config.Libs.Compose.preview)
     // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
     //implementation("androidx.compose.foundation:foundation:1.0.0")
     // Material Design
-    implementation("androidx.compose.material:material:${config.Versions.compose}")
+    implementation(config.Libs.Compose.material)
     // Material design icons
     //implementation("androidx.compose.material:material-icons-core:1.0.0")
     //implementation("androidx.compose.material:material-icons-extended:1.0.0")
     // Integration with observables
-    implementation("androidx.compose.runtime:runtime-livedata:1.0.0")
+    implementation(config.Libs.Compose.livedata)
 
     debugImplementation(config.Libs.Common.leakCanary)
 }

@@ -25,6 +25,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.usell.android.R
 
+
 @Composable
 fun Login(navController: NavController, viewModel: LoginViewModel = viewModel()) {
 
@@ -33,7 +34,6 @@ fun Login(navController: NavController, viewModel: LoginViewModel = viewModel())
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
         val onClickSignIn = {
             viewModel.onDoneClicked(navController)
         }
